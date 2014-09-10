@@ -33,7 +33,7 @@
     [myContent addObject:@"cell X"];
     self.content = myContent;
     
-    NSLog(@"%@",self.content);
+    //NSLog(@"%@",self.content);
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -86,8 +86,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.textLabel.text = [self.content objectAtIndex:indexPath.section];
     
-    [cell ]
     
     return cell;
 }
