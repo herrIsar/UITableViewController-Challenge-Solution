@@ -1,5 +1,5 @@
 //
-//  SHViewController.h
+//  SHTableViewController.h
 //  UITableViewController Challenge Solution
 //
 //  Created by Sha He on 10.09.14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SHViewController : UIViewController
+@interface SHTableViewController : UITableViewController
+
+@property (strong, nonatomic) NSMutableArray *content;
 
 @end
